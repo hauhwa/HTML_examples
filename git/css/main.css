@@ -1,0 +1,186 @@
+/*一些基本設定*/
+
+
+/*codepen*/
+
+
+/*https://www.google.com/fonts/earlyaccess 思源字體*/
+
+
+/*justfont*/
+
+@import url(http://fonts.googleapis.com/earlyaccess/cwtexhei.css);
+p,
+a,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    letter-spacing: 0.5px;
+    font-family: 'Noto Sans TC', sans-serif;
+    /*use this font if not use the font after the comma*/
+}
+
+* {
+    /*resize everything to width 250px including the border*/
+    box-sizing: border-box;
+    float: left;
+}
+
+p {
+    line-height: 1.5;
+    /*    font-size: 20px;*/
+}
+
+
+/*網站的header設定*/
+
+header {
+    font-size: 20px;
+    color: #2a1604;
+    /*ctrl+e on color to select more colors*/
+}
+
+header h1 {
+    margin: 0px;
+    padding: 0px;
+}
+
+nav {
+    font-size: 14px;
+    background-color: bisque;
+    position: fixed;
+    top: 0px;
+    left: 300px;
+}
+
+
+/*網站主體設計*/
+
+.featured-image {
+    width: 100%;
+    height: 300px;
+    background-image: url(../images/DSC07672.JPG);
+}
+
+nav ul>li {
+    list-style-type: none;
+    /*不需要縮排*/
+    list-style-position: inside;
+    /*make the list float left*/
+    display: inline-block;
+    width: 100px;
+    height: 30px;
+    border: 1px solid #DDD;
+    vertical-align: top;
+    text-align: center;
+    background-color: #ad6b3c;
+    position: relative;
+}
+
+nav a {
+    color: #f8f8f8;
+    line-height: 30px;
+    text-decoration: none;
+}
+
+.articles {
+    width: 800px;
+    /*margin top+bottom is 0, and left and right is auto*/
+    margin: 0 auto;
+}
+
+article {
+    text-align: center;
+    border-radius: 10px;
+    background-color: #e5962e;
+    padding: 10px;
+}
+
+article:nth-of-type(odd) {
+    background-color: #d8c3a7;
+}
+
+
+/*article:nth-of-type(1) {
+    
+}*/
+
+article:not(:first-of-type) {
+    width: 100%;
+    border: 1px solid #b4b0ac;
+}
+
+article img {
+    width: 90%;
+}
+
+
+/*測試用*/
+
+.box {
+    font-size: 30px;
+    font-weight: bold;
+    background-color: #eef2c2;
+    width: 250px;
+    height: 250px;
+    /*padding: top right bottom left*/
+    padding: 10px 20px;
+    /*overflow, if the box is smaller, hide overflowed data*/
+    /*    overflow: auto;*/
+    margin: 10px 30px;
+    text-align: center;
+    border-radius: 50%;
+    float: left;
+}
+
+
+/*.box:first-child {
+    relative to its original position move down 30px and right 50px
+    position: relative;
+    top: 0px;
+    left: 50px;
+}*/
+
+.dropdown {
+    width: 200px;
+    height: 300px;
+    background-color: aqua;
+    /*remove the item into a upper level*/
+    position: absolute;
+    top: 50px;
+    left: -10px;
+}
+
+.navdropdown {
+    margin: 0px;
+    padding: 0px;
+    position: absolute;
+    left: -1px;
+}
+
+.container {
+    background-color: burlywood;
+    border: 3px solid black;
+    overflow: auto;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.content {
+    width: 80%;
+    background-color: cadetblue;
+}
+
+aside {
+    width: 20%;
+    background-color: aqua;
+}
+
+footer {
+    width: 100%;
+    background-color: rosybrown;
+    float: left;
+}

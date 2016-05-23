@@ -1,0 +1,151 @@
+/*基本設定*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/*col設定*/
+
+[class*="col-"] {
+    float: left;
+    padding: 5px;
+}
+
+.col-md-1 {
+    width: calc(100% * 1/12);
+}
+
+.col-md-2 {
+    width: calc(100% * 2/12);
+}
+
+.col-md-3 {
+    width: calc(100% * 3/12);
+    text-align: center;
+}
+
+.col-md-4 {
+    width: calc(100% * 4/12);
+}
+
+.col-md-5 {
+    width: calc(100% * 5/12);
+}
+
+.col-md-6 {
+    width: calc(100% * 6/12);
+}
+
+.col-md-7 {
+    width: calc(100% * 7/12);
+}
+
+.col-md-8 {
+    width: calc(100% * 8/12);
+}
+
+.col-md-9 {
+    width: calc(100% * 9/12);
+}
+
+.col-md-10 {
+    width: calc(100% * 10/12);
+}
+
+.col-md-11 {
+    width: calc(100% * 11/12);
+}
+
+.col-md-12 {
+    width: calc(100% * 12/12);
+}
+
+
+/*Row設定*/
+
+.row {
+    width: 100%;
+}
+
+.row:after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+
+/*nav設定*/
+
+ul li {
+    padding: 10px;
+    list-style: none;
+    float: left;
+}
+
+nav {
+    overflow: auto;
+    background-color: black;
+    color: white;
+}
+
+ul {
+    overflow: auto;
+    padding-left: 10%;
+}
+
+
+/*header設定*/
+
+h1 {
+    height: 50px;
+    line-height: 50px;
+    font-size: 40px;
+}
+
+.content {
+    width: 100%;
+    padding: 30px 20px;
+}
+
+.container1 {
+    width: 80%;
+    margin: 30px auto;
+    overflow: auto;
+    padding-bottom: 30px;
+    background-color: #e3e3e3;
+}
+
+.button {
+    margin-left: 20px;
+    padding: 5px;
+    display: inline-block;
+    font-size: 5px;
+    border-radius: 5px;
+    background-color: blue;
+    color: white;
+    float: left;
+}
+
+.container2 {
+    width: 80%;
+    margin: 30px auto;
+    overflow: auto;
+    padding-bottom: 30px;
+    border-top: 2px solid #e3e3e3;
+}
+
+.container2 h2 {
+    padding: 15px 0px 10px 0px;
+}
+
+.thumbnail img {
+    width: 100%;
+    padding-bottom: 5px;
+}
+
+.thumbnail {
+    padding: 3px;
+}
